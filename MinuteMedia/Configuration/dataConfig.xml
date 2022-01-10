@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<environment>
+    <!-- TimeOut -->
+    <timeout>10</timeout>
+
+    <!--Platform-->
+    <platformType>api</platformType>
+
+    <!--Web-->
+    <browser>Chrome</browser>
+    <url>https://www.minutemedia.com/</url>
+    <imageRepo>./ImageRepository/</imageRepo>
+
+    <!--API-->
+    <url_api>https://swapi.dev/api</url_api>
+
+    <cardDetails>cardDetails.xls</cardDetails>
+</environment>

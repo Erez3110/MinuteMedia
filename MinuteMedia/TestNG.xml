@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="MinuteMedia">
+    <test name="MinuteMedia">
+
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+<!--            <class name="Helpers.visualTesting">-->
+<!--                <parameter name="url" value="https://www.dbltap.com/"/>-->
+<!--                <parameter name="platform" value="web"/>-->
+<!--            </class>-->
+
+            <class name="SanityTests.minuteMedia_web">
+                <parameter name="url" value="https://www.minutemedia.com/"/>
+                <parameter name="platform" value="web"/>
+            </class>
+
+            <class name="SanityTests.dbltap_web">
+                <parameter name="url" value="https://www.dbltap.com/"/>
+                <parameter name="platform" value="web"/>
+            </class>
+
+            <class name="SanityTests.swapi_api">
+                <parameter name="platform" value="api"/>
+                <methods>
+                    <include name="test03_verifyTatooineDiameter" />
+                    <include name="test04_millenniumFalconAppearances" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
