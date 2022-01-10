@@ -18,6 +18,7 @@ import javax.imageio.ImageIO;
 
 public class helperMethods extends commonOps
 {
+    // Both of the approaches crop the img element when taking a screenshot - need to resolve
     public static void takeElementScreenShot(WebElement imageElem, String imageName) throws IOException
     {
 //        imageScreenShot = new AShot().coordsProvider((new WebDriverCoordsProvider())).shootingStrategy(ShootingStrategies.scaling(2f)).takeScreenshot(driver,imageElem); //win 10
